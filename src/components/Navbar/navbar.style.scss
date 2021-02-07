@@ -1,0 +1,152 @@
+.navbar__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  border-bottom: 1px solid $gray;
+
+  &--left-side {
+    display: flex;
+    align-items: center;
+
+    .logo__wrapper {
+      display: none;
+    }
+
+    .page-title {
+      font-weight: 700;
+    }
+  }
+
+  &--right-side {
+    margin-left: auto;
+
+    .links__wrapper {
+      display: none;
+    }
+
+    .hamburger {
+      border: none;
+    }
+  }
+}
+
+.mobile-menu__wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 5;
+  background-color: rgba($black, 0.2);
+  transform: translateX(100vw);
+  transition: transform 0.3s ease-in-out;
+
+  &.active {
+    transform: translate(0vw);
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    background-color: $white;
+    padding: 16px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+
+      &.end {
+        justify-content: flex-end;
+      }
+
+      &.column {
+        flex-direction: column;
+      }
+
+      .cross {
+        border: none;
+      }
+
+      .select__wrapper {
+        width: 100%;
+        height: 60px;
+        border-radius: 0;
+      }
+
+      a {
+        width: 100%;
+        color: $black;
+        text-align: center;
+        padding: 18px;
+      }
+
+      .mobile_login-btn, .mobile_logout-btn {
+        width: 100%;
+        height: 60px;
+        border-radius: 0;
+        border-color: $indigo;
+        font-size: 16px;
+        font-weight: 500;
+        color: $indigo;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .navbar__wrapper {
+    &--left-side {
+      .logo__wrapper {
+        display: block;
+        width: 50px;
+        height: 50px;
+      }
+
+      .page-title {
+        margin-left: 8px;
+      }
+    }
+
+    &--right-side {
+      .links__wrapper {
+        display: block;
+
+        li {
+          display: inline-block;
+          font-size: 14px;
+          padding: 0 10px;
+          cursor: pointer;
+
+          .select__wrapper {
+            background-color: $white;
+            outline: none;
+          }
+          
+          a {
+            color: $black;
+          }
+        }
+      }
+
+      .hamburger {
+        display: none;
+
+        &:hover {
+          background-color: $gray;
+        }
+      }
+    }
+  }
+
+  .mobile-menu__wrapper {
+    display: none;
+  }
+}

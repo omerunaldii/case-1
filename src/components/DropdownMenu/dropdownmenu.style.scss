@@ -1,0 +1,26 @@
+.dropdown {
+  position: absolute;
+  top: 70px;
+  right: -100px;
+  width: 200px;
+  transform: translateX(-45%);
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: $rd-md;
+  padding: 1rem;
+  overflow: hidden;
+  transition: height 500ms ease;
+
+  &-email {
+    text-align: center;
+  }
+
+  .logout--btn {
+    display: block;
+    background-color: $white;
+    color: $indigo;
+    border: 1px solid $indigo;
+    border-radius: $rd-sm;
+    margin-top: 12px;
+  }
+}

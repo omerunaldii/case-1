@@ -1,0 +1,42 @@
+.forminput__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+
+  .input-label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .form-input {
+    height: 34px;
+    border-radius: $rd-sm;
+    outline: none;
+    padding: 0 8px;
+    margin: 8px 0 0 0;
+  }
+
+  .input-error {
+    font-size: 11px;
+    color: $error;
+    margin: 8px 0;
+  }
+
+  &.invalid {
+    .form-input {
+      border: 1px solid $error;
+    }
+  }
+
+  &.valid {
+    .form-input {
+      border: 1px solid $success;
+    }
+  }
+
+  &.default {
+    .form-input {
+      border: 1px solid $gray;
+    }
+  }
+}

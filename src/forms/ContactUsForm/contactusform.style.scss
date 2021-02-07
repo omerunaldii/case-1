@@ -1,0 +1,27 @@
+.contactus_form {
+  .form-item__wrapper {
+    margin-top: 8px;
+
+    .label {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .custom__select {
+      font-family: 'Nunito', sans-serif;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+  }
+
+  textarea {
+    width: calc(100% - 18px);
+    height: 125px;
+    background-color: $white;
+    border: 1px solid $gray;
+    border-radius: $rd-sm;
+    margin: 0;
+    margin-top: 8px;
+    padding: 8px;
+  }
+}

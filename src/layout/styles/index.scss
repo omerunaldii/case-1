@@ -1,0 +1,39 @@
+@import './_reset.scss';
+@import './theme';
+@import '../../components/index.scss';
+@import '../../forms/index.scss';
+@import '../../pages/index.scss';
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  background-color: $backgroundColor;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.content__wrapper {
+  padding: 12px 0;
+}
+
+.icon {
+  width: 24px;
+}
+
+.login--btn {
+  display: block;
+  margin-left: auto;
+  background-color: $indigo;
+  color: $white;
+}
+
+@media (min-width: $sm) {
+  .container {
+    padding: 0 24px;
+  }
+}

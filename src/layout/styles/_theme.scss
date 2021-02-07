@@ -1,0 +1,29 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+// Breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// colors
+$backgroundColor: #f4f4f5;
+$gray: #e4e4e7;
+$gray5: #9CA3AF;
+
+$white: #ffffff;
+$black: #000000;
+
+$indigo: #4f46e5;
+
+$success: rgb(34, 197, 94);
+$error: rgb(244, 63, 94);
+
+
+// radius
+$rd_sm: 4px;
+$rd_md: 8px;
+$rd_lg: 16px;
+$rd_xl: 24px;

@@ -1,0 +1,27 @@
+.contactus_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &-form__wrapper {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 16px;
+    background-color: $white;
+  }
+}
+
+@media (min-width: $md) {
+  .contactus_page {
+    &-form__wrapper {
+      width: 500px;
+      border-radius: $rd-md;
+    }
+  }
+}

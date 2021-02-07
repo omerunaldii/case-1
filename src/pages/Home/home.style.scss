@@ -1,0 +1,17 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .content {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 16px;
+  }
+}
